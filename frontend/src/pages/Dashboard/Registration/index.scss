@@ -1,0 +1,75 @@
+/* The dashCheck */
+.dashCheck {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  width: fit-content;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  p {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  :focus {
+    background-color: transparent;
+  }
+}
+
+/* Hide the browser's default checkbox */
+.dashCheck input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.dashCheckMark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.dashCheck:hover input ~ .dashCheckMark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.dashCheck input:checked ~ .dashCheckMark {
+  background-color: #ff2b06;
+}
+
+/* Create the dashCheckMark/indicator (hidden when not checked) */
+.dashCheckMark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the dashCheckMark when checked */
+.dashCheck input:checked ~ .dashCheckMark:after {
+  display: block;
+}
+
+/* Style the dashCheckMark/indicator */
+.dashCheck .dashCheckMark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

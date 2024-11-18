@@ -1,0 +1,25 @@
+.dotsAboutSection {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.xAboutSection {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 50%;
+}
+
+.lineAboutHeading {
+  position: absolute;
+  width: 106px;
+  height: 10px;
+  bottom: 0;
+  background: #ff2b06;
+  border-radius: 2px;
+  z-index: -1;
+}

@@ -1,0 +1,37 @@
+.tModalBg-visible {
+  z-index: 100;
+}
+.tModalBg-hidden {
+  z-index: -1;
+  background-color: transparent;
+}
+
+.tModal {
+  transition: all ease-in-out 0.3s;
+  width: 500px;
+  padding: 1.5rem;
+}
+
+.tModal-hidden {
+  height: 0;
+  width: 0;
+  padding: 0;
+}
+.tModal-body {
+  height: 75%;
+}
+.tModal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+  .tModal {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tModal {
+    width: 300px;
+  }
+}

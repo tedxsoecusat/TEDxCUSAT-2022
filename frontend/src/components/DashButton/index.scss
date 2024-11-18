@@ -1,0 +1,35 @@
+.tBtn {
+  min-width: 150px;
+  background-color: #ff2b06;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: width ease-in-out 0.2s;
+  .btnLoader {
+    height: 25px;
+    padding-right: 10px;
+  }
+}
+.tBtn-link {
+  background-color: #ffffff;
+  color: #ff2b06;
+}
+.tBtn-small {
+  height: 40px;
+  padding: 0 10px;
+}
+.tBtn-normal {
+  height: 50px;
+  padding: 0 20px;
+}
+.tBtn-large {
+  height: 60px;
+  padding: 0 25px;
+}
+.tBtn-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

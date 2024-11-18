@@ -1,0 +1,32 @@
+.tLoaderContainer-fullpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  top: 0;
+  left: 250px;
+  width: calc(100% - 250px);
+  position: fixed;
+
+  @media screen and (max-width: 1080px) {
+    left: 180px;
+    width: calc(100% - 180px);
+  }
+  @media screen and (max-width: 700px) {
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: calc(100% - 60px);
+  }
+}
+.tLoader {
+  animation: rotation 1.4s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

@@ -1,0 +1,29 @@
+.tInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  input {
+    border: 0.5px solid #000000;
+    padding: 10px 10px;
+    height: 50px;
+    width: 350px;
+    outline: none;
+    border-radius: 5px;
+    color: #202020;
+  }
+}
+.tInput-error {
+  input {
+    border: 0.5px solid #ff6347;
+  }
+}
+.tInput-errMsg {
+  color: rgb(255, 86, 56);
+  font-size: 14px;
+  font-weight: 500;
+}

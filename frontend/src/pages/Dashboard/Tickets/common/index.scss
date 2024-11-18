@@ -1,0 +1,187 @@
+.payBtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .payBtn {
+    background-color: #ff2b06;
+    color: white;
+    height: 48px;
+    width: 120px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+}
+.tStepsBox {
+  background-color: white;
+  border: 2px solid #ff2b06;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 700px;
+  padding: 30px 30px;
+  margin: 50px 0;
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ff2b06;
+  }
+  .tSteps {
+    margin: 0;
+    .tStep {
+      display: flex;
+      align-items: center;
+      margin: 40px 15px;
+      //   margin-bottom: 10px;
+      span {
+        // flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff2b06;
+        color: #ffffff;
+        border-radius: 500px;
+        height: 45px;
+        width: 45px;
+        margin-right: 15px;
+      }
+      p {
+        flex: 9;
+        line-height: 22px;
+        font-size: 17px;
+        text-align: justify;
+      }
+    }
+  }
+  .tStepsFooter {
+    .tStepsFooter-info {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    p {
+      font-size: 18px;
+      margin: 12px 0;
+    }
+    .ticketPrice {
+      font-size: 20px;
+    }
+    a {
+      color: #ff2b06;
+    }
+    span.amount {
+      background-color: #ffffff;
+      color: #ff2b06;
+      // padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .paymentBtn {
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      margin: auto;
+      margin-top: 30px;
+      // background-color: hotpink;
+      width: fit-content;
+      a {
+        border: 2px solid #1e40a0;
+        border-radius: 5px;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        transition: ease-in-out 0.2s;
+      }
+
+      :hover {
+        a {
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.28);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    padding: 25px 20px;
+    margin: 50px 0;
+    .tSteps {
+      .tStep {
+        margin: 30px 10px;
+      }
+    }
+
+    .tStepsFooter {
+      .tStepsFooter-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    padding: 25px 25px;
+    margin: 50px 0;
+    .tSteps {
+      .tStep {
+        margin: 30px 1px;
+      }
+    }
+  }
+  @media screen and (max-width: 520px) {
+    .tSteps {
+      .tStep {
+        flex-direction: column;
+        span {
+          height: 36px;
+          width: 36px;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.stripeErr {
+  color: tomato;
+  background-color: #ff634736;
+  border: 0.5px solid tomato;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+.stripeCardInput {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  min-height: 48px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+// .tTicket {
+//   display: flex;
+//   .tTicket-left {
+//     background-color: #ff2b06;
+//   }
+// }
+.paymodal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  a {
+    margin-top: 10px;
+  }
+  canvas {
+    margin-top: 20px;
+  }
+}

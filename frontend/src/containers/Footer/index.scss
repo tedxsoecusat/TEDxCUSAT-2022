@@ -1,0 +1,26 @@
+.footer{
+  background: #070707;
+
+  .logo{
+    height: 2.4rem;
+    width: auto;
+  }
+
+  .icon-image{
+    width: 1.2rem;
+  }
+
+  p {
+    color: #FAFAFA;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  @media (max-width: 640px){
+    .logo{
+      width: fit-content;
+    }
+  }
+
+}

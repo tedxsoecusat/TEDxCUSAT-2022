@@ -1,0 +1,54 @@
+.dashUploader {
+  margin-bottom: 25px;
+  overflow: hidden;
+  transition: height ease-in-out 0.2s;
+  height: 150px;
+  .foreUploader {
+    border: 1px solid #000000;
+    padding: 10px 10px;
+    font-weight: 500;
+    height: 50px;
+    width: 350px;
+    outline: none;
+    border-radius: 5px;
+    color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    svg {
+      margin: 10px;
+    }
+  }
+  .backUploader {
+    display: none;
+  }
+  .uploaderInfo {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    width: 350px;
+    img {
+      height: 80px;
+      width: auto;
+    }
+    p {
+      padding: 10px 20px;
+    }
+  }
+  .uploaderInfo-withoutFile {
+    img {
+      width: 0;
+      height: 0;
+      display: none;
+    }
+  }
+}
+.dashUploader-hidden {
+  min-height: 0px;
+  margin-bottom: 0px;
+  height: 0px;
+  //   width: 0px;
+}

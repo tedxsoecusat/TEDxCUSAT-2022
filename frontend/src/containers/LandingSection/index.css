@@ -1,0 +1,66 @@
+.landing__layover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  @apply bg-center bg-no-repeat bg-cover blur-sm absolute top-0 left-0 w-full
+      h-full;
+}
+
+.bgVideoLanding {
+  @apply h-full overflow-hidden blur-sm scale-[140%];
+}
+
+.landing__scrollKeyframe {
+  animation: scroll 3s infinite ease-in-out;
+}
+
+@keyframes scroll {
+  30% {
+    transform: translateY(8px);
+  }
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#heading {
+  font-size: 600px;
+  font-weight: 900;
+  line-height: 600px;
+}
+
+.bg-video {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+#mask-bg {
+  mask: url("#mask");
+}
+
+@media screen and (max-width: 1280px) {
+  .mobile-bg {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../../static/img/landing-bg.png");
+    @apply bg-center bg-no-repeat bg-cover blur-sm absolute top-0 left-0 w-full
+      h-full;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+  }
+}

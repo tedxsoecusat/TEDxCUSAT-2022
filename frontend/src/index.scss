@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.animated-text {
+  background-color: #ff2b06;
+  background-image: linear-gradient(
+    45deg,
+    #ff0000 0%,
+    #ff7b00 45%,
+    #ff2b06 100%
+  );
+  background-size: 500% auto;
+  animation: textShine 0.7s ease-in-out infinite alternate;
+  -webkit-animation: textShine 0.7s ease-in-out infinite alternate;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 7px;
+    transition: all 0.5s ease-in;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ff2b06d8;
+    outline: none;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, #000000 100%);
+    backdrop-filter: blur(21px);
+  }
+}
